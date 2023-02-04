@@ -37,6 +37,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.PowerShell.SDK": {
+              "target": "Package",
+              "version": "[7.4.0-preview.1, )"
+            },
+            "System.Management.Automation": {
+              "target": "Package",
+              "version": "[7.4.0-preview.1, )"
+            },
+            "System.Management.dll": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

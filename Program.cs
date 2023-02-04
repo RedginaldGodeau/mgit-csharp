@@ -1,21 +1,20 @@
 ﻿using System;
+using System.Management.Automation;
 using System.Diagnostics;
 
 class MGit
 {
-
-    static void ExecCommand (string cmd)
+    static bool ExecCmd (string cmd, string arg)
     {
-        try
-            {
-                Process.Start("cmd.exe", cmd);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-    }
+        /*PowerShell ps = PowerShell.Create();
+        foreach (string cmd in cmds)
+            ps.AddCommand(@cmd);
 
+        ps.Invoke();*/
+        Process.Start(cmd, arg);
+
+        return (true);
+    }
 
     static bool Push (string[] args)
     {
@@ -57,8 +56,11 @@ class MGit
         if (commit.Length == 0)
             while ((commit = Console.ReadLine()).Length == 0)
                 ;
-        ExecCommand($"git add {docs}");
-        ExecCommand($"git commit {commit}");
+        /*ExecCmd(new string[] {$"git add {docs}", $"git commit -m {commit}", $"git push"});*/
+
+        ExecCmd("git", @"add " + docs);
+        ExecCmd("git", @"commit -m " + '\"' +commit + '\"');
+        ExecCmd("git", @"push ");
 
         return (true);
     }
@@ -88,6 +90,5 @@ class MGit
 
             default: break;
         }
-
     }
 }
