@@ -1,0 +1,15 @@
+/Users/redginald/Documents/C#/mgit/bin/Debug/net7.0/mgit
+/Users/redginald/Documents/C#/mgit/bin/Debug/net7.0/mgit.deps.json
+/Users/redginald/Documents/C#/mgit/bin/Debug/net7.0/mgit.runtimeconfig.json
+/Users/redginald/Documents/C#/mgit/bin/Debug/net7.0/mgit.dll
+/Users/redginald/Documents/C#/mgit/bin/Debug/net7.0/mgit.pdb
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.csproj.AssemblyReference.cache
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.GeneratedMSBuildEditorConfig.editorconfig
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.AssemblyInfoInputs.cache
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.AssemblyInfo.cs
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.csproj.CoreCompileInputs.cache
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.dll
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/refint/mgit.dll
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.pdb
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/mgit.genruntimeconfig.cache
+/Users/redginald/Documents/C#/mgit/obj/Debug/net7.0/ref/mgit.dll
