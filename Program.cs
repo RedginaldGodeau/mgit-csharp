@@ -6,13 +6,7 @@ class MGit
 {
     static bool ExecCmd (string cmd, string arg)
     {
-        /*PowerShell ps = PowerShell.Create();
-        foreach (string cmd in cmds)
-            ps.AddCommand(@cmd);
-
-        ps.Invoke();*/
         Process.Start(cmd, arg);
-
         return (true);
     }
 
@@ -56,7 +50,6 @@ class MGit
         if (commit.Length == 0)
             while ((commit = Console.ReadLine()).Length == 0)
                 ;
-        /*ExecCmd(new string[] {$"git add {docs}", $"git commit -m {commit}", $"git push"});*/
 
         ExecCmd("git", @"add " + docs);
         ExecCmd("git", @"commit -m " + '\"' +commit + '\"');
